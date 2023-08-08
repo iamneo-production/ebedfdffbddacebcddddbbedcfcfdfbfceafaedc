@@ -53,7 +53,7 @@ public class TaskController {
         if(allTask !=null){
             for(Task task : allTask){
                 if(task.getTaskHolderName().equals(holderName)){
-                    //TaskRepository.deleteById(task.getId());
+                    //taskRepository.deleteById(task.getId());
                     return new ResponseEntity<>(task,HttpStatus.ACCEPTED);
                 }
             }
@@ -77,6 +77,6 @@ public class TaskController {
         }
 
         return  new ResponseEntity<>("Task with specified Task Id not found",HttpStatus.ACCEPTED);
-    }
+    }
 
 }

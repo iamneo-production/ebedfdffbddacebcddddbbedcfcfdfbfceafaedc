@@ -1,16 +1,14 @@
-package com.example.Task.Management.controller;
+package com.examly.springapp.controller;
 
 
-import com.example.Task.Management.TaskRepository;
-import com.example.Task.Management.model.Task;
+import com.examly.springapp.repository.*;
+import com.examly.springapp.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.swing.table.TableStringConverter;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @CrossOrigin
